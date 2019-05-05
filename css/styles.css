@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.table {
+    border: 2px solid #000;
+    border-spacing: 0px;
+    padding: 10px;
+}
+.table tr td {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #E3E3E3;
+}
+tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: #000;
+}
+tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: #000;
+}
+.table tr td:hover {
+    background-color: blue;
+}
+th {
+    font-size: 22px;
+    font-weight: normal;
+    color: #888;
+    padding: 10px;
+}
+#tab .active {
+    background-color: green;
+}
